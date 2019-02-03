@@ -13,3 +13,14 @@ def strings_test1():
     print('b = \'01\\t012\\t0123\\t01234\'')
     print('b={0}'.format(b))
     print('b.expandtabs()={0}', b.expandtabs());
+    c = str('Python')
+    print('\'Py\' in \'Python\' = {0}'.format('Py' in 'Python'))
+
+def unpackargs():
+    l1 = list(range(3,6))
+    print('l1 = list(range(3,6))')
+    print('l1={0}'.format(l1))
+    args = [3, 6]
+    l2 = list(range(*args))
+    print('l2 = list(range(*args))')
+    print('l2={0}'.format(l2))
