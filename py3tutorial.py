@@ -24,3 +24,11 @@ def unpackargs():
     l2 = list(range(*args))
     print('l2 = list(range(*args))')
     print('l2={0}'.format(l2))
+
+def make_incrementor(n):
+    return lambda x: x + n
+
+def incr_lambda():
+    f = make_incrementor(42)
+    print('f(0)={0}'.format(f(0)))
+    print('f(1)={0}'.format(f(1)))
